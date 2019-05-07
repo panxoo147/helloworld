@@ -1,0 +1,88 @@
+.Container {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 320px;
+    margin: 0 auto;
+  }
+  .Button {
+      width: 400px;
+      height: 400px;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    color: #fff;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.0625rem;
+   
+    padding: 1.5625rem 2.1875rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    will-change: transform;
+    z-index: 1;
+  }
+  .Button-mask {
+    position: absolute;
+    transition: -webkit-transform 0.425s ease-in-out;
+    transition: transform 0.425s ease-in-out;
+    transition: transform 0.425s ease-in-out, -webkit-transform 0.425s ease-in-out;
+    z-index: -1;
+  }
+  .Button-mask.slides-left {
+    left: 0;
+  }
+  .Button-mask.slides-right {
+    right: 0;
+  }
+  .Button-slides {
+    top: 0;
+    width: 200%;
+    height: 100%;
+  }
+  .Button-rotates {
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 600%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  .Button:hover .Button-mask.slides-left {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  .Button:hover .Button-mask.slides-right {
+    -webkit-transform: translate3d(50%, 0, 0);
+            transform: translate3d(50%, 0, 0);
+  }
+  .Button:hover .Button-mask.rotates-clockwise {
+    -webkit-transform: rotate(180deg) translate3d(50%, 50%, 0);
+            transform: rotate(180deg) translate3d(50%, 50%, 0);
+  }
+  .Button:hover .Button-mask.rotates-c-clockwise {
+    -webkit-transform: rotate(-180deg) translate3d(50%, 50%, 0);
+            transform: rotate(-180deg) translate3d(50%, 50%, 0);
+  }
+  .Graident-one {
+    background: linear-gradient(135deg, #3edfeb 0%, #00eb5a 100%);
+  }
+  .Graident-two {
+    background: linear-gradient(135deg, #f3ff4a 0%, #e73c7e 100%);
+  }
+  .Graident-three {
+    background: linear-gradient(135deg, #24f7e5 0%, #9876e9 100%);
+  }
+  .Graident-four {
+    background: linear-gradient(135deg, #e32d76 0%, #648fe6 100%);
+  }
+  .Graident-five {
+    background: linear-gradient(135deg, #b6eb77 0%, #359ab6 100%);
+  }
+  

@@ -1,0 +1,43 @@
+<style>
+    table{
+      font-family: 'Righteous', cursive;
+      font-size: 40px;
+      border: 9px solid grey;
+    }
+    th , td  {
+      border: 2px solid grey;
+      border-collapse: collapse;
+      padding: 5px;
+    
+    }
+    table tr:nth-child(odd) {
+      background-color: #f1f1f1;
+    }
+    table tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+    </style>
+<html style="  background-color: #222222;
+                background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+                padding-left: 10px">
+
+ <p><br><h1 style=" font-family:Black Ops One;font-size: 60px;color: rgb(255, 255, 255);"> Drivers Are:</h1> 
+ </p>
+  <ul>
+   
+    <div ng-app="myApp" ng-controller="customersCtrl" > 
+    <table> 
+      <th style="background-color: azure; font-family:Black Ops One;">driverID</th>
+      <th style="background-color: azure; font-family:Black Ops One;">Drivername</th>
+      <th style="background-color: azure; font-family:Black Ops One;">Route</th>
+      <tr *ngFor="let c of tableList"> 
+        <td>{{ c.getMemid() }}</td>
+        <td>{{ c.getName() }}</td>
+        <td>{{c.getRoute()}}</td>
+      </tr>
+    </table>
+  </div>
+     </ul>
+<br><br>
+<img src="">
+</html>

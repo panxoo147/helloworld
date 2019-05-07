@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html >
+    <style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  width: 400px;
+  height: 400px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Black+Ops+One|Luckiest+Guy|Sonsie+One|Shojumaru&effect=3d|3d-float|anaglyph|brick-sign|canvas-print|
+            crackle|decaying|destruction|distressed|distressed-wood|emboss|fire|fire-animation|fragile|grass|ice|mitosis|neon|outline|putting-green|
+            scuffed-steel|shadow-multiple|splintered|static|stonewash|vintage|wallpaper' 
+            rel='stylesheet' type='text/css'>
+    <h1 style="  background-color: #222222;
+    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;width:100%;
+    font-family:Black Ops One;">
+        
+        <h1 style="text-align: center"><br><label style="font-size: 2em;color: white">. . . WELLCOME . . .</label><br><label style="font-size: 80px;color: white">To NGV.... SYSTEM</label><br><br><br>
+    </h1>
+    
+    <body style="height: 100%;">            
+            <div class="container-fluid">
+
+              <div class="row">
+                <div class="col-sm-4" style="background-color:rgba(42, 241, 175, 0.932);">
+                        <br>
+                   <div class="Buttons">
+                        <div class="center">
+                            <a class="Button" [routerLink] = "['/time']" style="background-color: chartreuse" >
+                              <label style="font-family: 'Mitr', sans-serif;">ดูเวลา</label><br>
+                                        <img src="http://www.logospng.com/images/11/isbc-integrated-system-and-business-consultant-11847.png">
+                                <span class="Button-mask Button-rotates rotates-clockwise Graident-one"></span></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(245, 224, 168);">
+                        <br>
+                        <div class="Buttons">
+                                <div class="center">
+                                    <a class="Button" [routerLink] = "['/map']" style="background-color: chartreuse" >
+                                      <label style="font-family: 'Mitr', sans-serif;">แผนที่การเดินรถ</label><br>
+                                        <img src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/location-512.png">
+                                        <span class="Button-mask Button-rotates rotates-clockwise Graident-two"></span></a>
+                                </div>
+                            </div>
+                        <br><br>
+                </div>
+                <div class="col-sm-4" style="background-color:rgba(117, 243, 237, 0.829);">
+                        <br>
+                        <div class="Buttons">
+                                <div class="center">
+                                    <a class="Button" [routerLink] = "['/status']" style="background-color: chartreuse" >
+                                        <label style="font-family: 'Mitr', sans-serif;">สถานะ/รถที่พร้อมใช้</label><br>
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bus-logo.svg/454px-Bus-logo.svg.png">
+                                        <span class="Button-mask Button-slides slides-left Graident-three"></span></a>
+                                </div>
+                            </div>
+                </div>
+              </div>
+            </div>
+            
+        </body>
+    </h1>
+    <router-outlet></router-outlet>  
+</html>

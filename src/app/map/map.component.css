@@ -1,0 +1,83 @@
+.r {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(143, 245, 84);
+  }
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(231, 129, 197);
+  }
+  .overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+   
+.r:hover .overlay {
+  opacity: 1;
+}
+.r:hover .overlay1 {
+    opacity: 1;
+  }
+  .r:hover .overlay2 {
+    opacity: 1;
+  }
+  .r:hover .overlay3 {
+    opacity: 1;
+  }
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ font-family: 'Mitr', sans-serif;
+}
